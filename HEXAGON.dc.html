@@ -1288,9 +1288,9 @@ class Component extends DCLogic {
     const introNav = [{id:'landing', label:'착륙'},{id:'growing', label:'성장'},{id:'leaping', label:'도약'}].map(n=>({...n, onClick:()=>goStage(n.id), style:'border:none; background:transparent; cursor:pointer; font-family:inherit; font-size:14.5px; font-weight:600; color:#3C4A5E; padding:10px 16px; border-radius:10px; transition:background .15s, color .15s;'}));
     const trustStats = [{value:'585+', label:'누적 파견 인원'},{value:'6개국', label:'매칭 가능 국가'},{value:'94%', label:'최고 매칭률'},{value:'4.16', label:'프로그램 만족도'}];
     const stageCards = [
-      {num:'01', en:'LANDING', emoji:'✈️', title:'나에게 맞는 국가를 찾아요', desc:'착륙 육각형으로 선진국 vs ODA 중점협력국을 매칭하고, 선배 아카이브로 현지 정보를 확인해요.', accent:'#7C3AED', bgStyle:'background:linear-gradient(145deg,#F3EEFF 0%,#EDE4FF 100%); box-shadow:0 8px 28px rgba(124,58,237,0.1);', screen:'landing'},
+      {num:'01', en:'LANDING', emoji:'✈️', title:'나에게 맞는 국가를 찾아요', desc:'착륙 육각형으로 니즈에 맞는 국가를 매칭하고, 선배 아카이브로 현지 정보를 확인해요.', accent:'#7C3AED', bgStyle:'background:linear-gradient(145deg,#F3EEFF 0%,#EDE4FF 100%); box-shadow:0 8px 28px rgba(124,58,237,0.1);', screen:'landing'},
       {num:'02', en:'GROWING', emoji:'📈', title:'실무 일지로 역량을 키워요', desc:'저장한 일지를 AI가 분석해 성장 육각형과 맞춤 피드백, 자격증 로드맵을 제공해요.', accent:'#1E5BB0', bgStyle:'background:linear-gradient(145deg,#EBF3FF 0%,#DCEAFF 100%); box-shadow:0 8px 28px rgba(30,91,176,0.1);', screen:'growing'},
-      {num:'03', en:'LEAPING', emoji:'🚀', title:'귀국 후 도약을 준비해요', desc:'일지를 바탕으로 역량을 분석하고 특색있는 경험을 자소서에 녹여 회사와 매칭합니다.', accent:'#1E9E6A', bgStyle:'background:linear-gradient(145deg,#E8F8F0 0%,#D4F0E4 100%); box-shadow:0 8px 28px rgba(30,158,106,0.1);', screen:'leaping'},
+      {num:'03', en:'LEAPING', emoji:'🚀', title:'귀국 후 도약을 준비해요', desc:'일지를 바탕으로 역량을 분석하고 특색있는 경험을 자소서에 녹여 회사와 매칭해요.', accent:'#1E9E6A', bgStyle:'background:linear-gradient(145deg,#E8F8F0 0%,#D4F0E4 100%); box-shadow:0 8px 28px rgba(30,158,106,0.1);', screen:'leaping'},
     ].map(sc=>({...sc, onClick:()=>goStage(sc.screen)}));
     const titles = {
       home:['홈','안건호님의 글로벌 커리어 현황'],
