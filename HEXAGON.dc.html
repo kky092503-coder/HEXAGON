@@ -1319,8 +1319,8 @@ class Component extends DCLogic {
     ].map(j=>({...j, onClick:()=>this.go(j.id), iconStyle:'width:42px;height:42px;clip-path:polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%);background:linear-gradient(135deg,'+j.color+','+j.color+'cc);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;', statusStyle:'font-size:11px;font-weight:700;color:'+j.color+';background:'+j.color+'1a;padding:5px 11px;border-radius:20px;'}));
     const actions = [
       {title:'선배 아카이브 국가별 후기 보기', sub:selected.name+' 관련 후기와 정착 팁을 바로 확인할 수 있어요', tag:'착륙', tagColor:'#1E9E6A', tagBg:'#E5F5EE', dotColor:'#1E9E6A'},
-      {title:'입력한 자격정보 기반 로드맵 확인', sub:roadmapBasisText, tag:'로드맵', tagColor:'#1E5BB0', tagBg:'#EAF1FC', dotColor:'#1E5BB0'},
-      {title:'지난 일지 불러와서 다시 분석', sub:'저장된 '+s.journalEntries.length+'개의 일지 중 하나를 선택할 수 있어요', tag:'성장', tagColor:'#E0892E', tagBg:'#FBEFE0', dotColor:'#E0892E'},
+      {title:'입력한 정보 기반 로드맵 확인', sub:roadmapBasisText, tag:'로드맵', tagColor:'#1E5BB0', tagBg:'#EAF1FC', dotColor:'#1E5BB0'},
+      {title:'작성한 일지 분석', sub:'저장된 '+s.journalEntries.length+'개의 일지 중 하나를 선택할 수 있어요', tag:'성장', tagColor:'#E0892E', tagBg:'#FBEFE0', dotColor:'#E0892E'},
     ].map(a=>({...a, dotStyle:'width:9px;height:9px;border-radius:3px;flex:none;background:'+a.dotColor+';'}));
     const stats = [
       {label:'매칭 국가', value:String(this.countries.length), unit:'개국'},
